@@ -5,7 +5,7 @@ import com.ciaosgarage.iBill.beans.service.account.*;
 import com.ciaosgarage.iBill.context.IBillContext;
 import com.ciaosgarage.iBill.context.TestContext;
 import com.ciaosgarage.iBill.domain.Account;
-import com.ciaosgarage.iBill.testTools.VoSampler;
+import com.ciaosgarage.iBill.testTools.ValueSampler;
 import com.ciaosgarage.newDao.daoService.DaoService;
 import com.ciaosgarage.newDao.defaultVo.SeqTable;
 import org.junit.Before;
@@ -33,7 +33,7 @@ public class AccountServiceTest {
     @Autowired
     DaoService daoService;
 
-    VoSampler sampler;
+    ValueSampler sampler;
 
     @Before
     public void setUp() {
@@ -43,7 +43,7 @@ public class AccountServiceTest {
         // 키값 모두 삭제하기
         daoService.getDao().deleteAll(SeqTable.class);
 
-        sampler = new VoSampler();
+        sampler = new ValueSampler();
     }
 
     @Test

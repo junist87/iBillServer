@@ -4,7 +4,7 @@ package com.ciaosgarage.iBill.util.cryptor;
 import com.ciaosgarage.iBill.beans.util.cryptor.Cryptor;
 import com.ciaosgarage.iBill.context.IBillContext;
 import com.ciaosgarage.iBill.context.TestContext;
-import com.ciaosgarage.iBill.testTools.VoSampler;
+import com.ciaosgarage.iBill.testTools.ValueSampler;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,11 +27,11 @@ public class CryptorTest {
     Cryptor cryptor;
 
 
-    VoSampler sampler;
+    ValueSampler sampler;
 
     @Before
     public void setUp() {
-        sampler = new VoSampler();
+        sampler = new ValueSampler();
     }
 
     @Test
